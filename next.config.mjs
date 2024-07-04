@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.mjs
 
-export default nextConfig;
+import withSvgr from 'next-svgr';
+
+const nextConfig = {
+  // Otras configuraciones de Next.js
+};
+
+export default withSvgr(nextConfig);
