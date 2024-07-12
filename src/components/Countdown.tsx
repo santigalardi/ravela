@@ -61,12 +61,12 @@ const Countdown: React.FC = () => {
 
   return (
     <div className="py-6 min-h-lvh flex flex-col gap-y-10 justify-center items-center">
-      <p className="text-xl">
+      <p className="text-center text-xl md:text-2xl p-4">
         Próximo evento de Ravelación {formattedDate} a las {formattedTime} en...
       </p>
 
       <Link href="https://www.instagram.com/fulanocafe/?hl=es" target="_blank">
-        <Image src={LocationLogo} alt="Ravelación Logo" width={900}></Image>
+        <Image src={LocationLogo} alt="Ravelación Logo" width={900} className="p-4"></Image>
       </Link>
 
       <div className="flex flex-row gap-x-1 text-primary-white uppercase font-semibold">

@@ -11,10 +11,12 @@ const Accordion = ({ title, answer }: { title: string; answer: string }) => {
   ));
 
   return (
-    <div className="py-6 border border-transparent border-t-primary-gray mb-4">
-      <button onClick={() => setAccordionOpen(!accordionOpen)} className="flex justify-between w-full ">
-        <span className="font-bold text-primary-purple2">{title}</span>
-        {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
+    <div className="py-6 border border-transparent border-t-primary-gray">
+      <button
+        onClick={() => setAccordionOpen(!accordionOpen)}
+        className="flex justify-between items-center w-full"
+      >
+        <span className="font-bold text-primary-purple2 text-start text-sm md:text-lg">{title}</span>
         <svg
           className="fill-primary-purple2 shrink-0 ml-8"
           width="16"
@@ -40,7 +42,7 @@ const Accordion = ({ title, answer }: { title: string; answer: string }) => {
         </svg>
       </button>
       <div
-        className={`grid mt-6 pr-8 overflow-hidden transition-all duration-300 ease-in-out text-primary-white text-sm ${
+        className={`grid mt-6 pr-6 overflow-hidden transition-all duration-300 ease-in-out text-primary-white text-sm md:text-lg ${
           accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
         }`}
       >
