@@ -9,13 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        dark: {
-          black: '#1A1A1A',
-          gray: '#222222',
-          text: '#DDDDDD',
-          accent: '#FF6B6B',
-          highlight: '#ABC302',
-          blue: '#4A90E2',
+        primary: {
+          black: '#191919',
+          darkgray: '#616161',
+          gray: '#C0C0C0',
+          white: '#f2f2f2',
+          purple: '#770E89',
+          purple2: '#93329F',
+          purple3: '#A24CAF',
+          orange: '#FF5200',
+          orange2: '#FF6A33',
+          lightblue: '#04C5D9',
         },
       },
       backgroundImage: {

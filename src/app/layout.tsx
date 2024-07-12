@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
-
-import { Barlow } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Footer from '@/components/Footer';
 
-const barlow = Barlow({
-  weight: '700',
+const titilium = Poppins({
+  weight: '600',
   subsets: ['latin'],
 });
 
@@ -22,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.className}>
+      <body className={`text-primary-white ${titilium.className}`}>
         <Header />
         {children}
         <Footer />
