@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import LocationLogo from '../assets/images/FULANO-Logo_Mesa-de-trabajo-1-copia-2.png';
+import LocationLogo from '@/assets/images/fulano-wordmark.png';
 import Link from 'next/link';
 
 const Countdown: React.FC = () => {
