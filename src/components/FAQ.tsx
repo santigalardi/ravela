@@ -2,7 +2,7 @@ import Accordion from './Accordion';
 
 export default function FAQ() {
   return (
-    <div className="p-8">
+    <div className="p-2 md:p-8">
       <h2 className="text-2xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
       <Accordion
         title="¿Cuál es la propuesta de Ravelación?"

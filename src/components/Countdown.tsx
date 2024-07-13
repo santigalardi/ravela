@@ -60,7 +60,7 @@ const Countdown: React.FC = () => {
   }, []);
 
   return (
-    <div className="py-6 min-h-lvh flex flex-col gap-y-10 justify-center items-center">
+    <div className="md:pb-12 min-h-screen flex flex-col gap-y-10 justify-center items-center">
       <p className="text-center text-xl md:text-2xl p-4">
         Próximo evento de Ravelación {formattedDate} a las {formattedTime} en...
       </p>
