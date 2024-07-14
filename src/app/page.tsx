@@ -45,22 +45,6 @@ export default function Home() {
         <Countdown />
       </div>
 
-      {/* About Screen 2 Vision */}
-      {/* 
-      <div
-        id="about-vision"
-        className="max-h-screen p-4 sm:p-6 md:p-12 lg:p-16 xl:p-24 bg-gradient-to-t from-primary-black to-slate-950"
-      >
-        <div className="max-w-4xl mx-auto">
-          <p className="italic text-lg sm:text-xl md:text-2xl lg:text-3xl my-16 text-shadow text-center">
-            Impulsamos la escena electrónica emergente de LATAM, proporcionando visibilidad y herramientas a nuevos
-            talentos para que puedan alcanzar su potencial y conectarse con su audiencia. En un ambiente seguro y
-            profesional, convertimos sueños en realidades musicales.
-          </p>
-        </div>
-      </div> */}
-
-      {/* Screen 3 Call to Action Form */}
       <div
         id="contest"
         className="min-h-screen flex justify-center items-center p-6 bg-cover bg-center"
