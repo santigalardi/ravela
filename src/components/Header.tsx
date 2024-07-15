@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="absolute top-0 left-0 w-full flex items-center justify-center p-6 bg-transparent">
       <div className="">
-        <Image src="/ravelacion-logo.svg" alt="Ravelación Logo" height={100} width={100} />
+        <Image src="/ravelacion-logo-white.svg" alt="Ravelación Logo" height={120} width={120} />
       </div>
 
       {/* <Link href="/">
