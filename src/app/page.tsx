@@ -30,7 +30,7 @@ export default function Home() {
         >
           <div className="px-4 mb-4">
             <h1 className="text-center text-primary-white tracking-tighter text-5xl sm:text-8xl md:text-8xl lg:text-8xl xl:text-9xl text-shadow text-shadow-blur-9">
-              RAVELA
+              RAVELACION
             </h1>
           </div>
           <div className="px-4">

@@ -10,7 +10,7 @@ const titilium = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Ravela',
+  title: 'Ravelación',
   description: 'Los DJs del Mañana se Revelan Hoy',
 };
 
