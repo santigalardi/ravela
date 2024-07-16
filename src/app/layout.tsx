@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`text-primary-white ${titilium.className}`}>
+    <html lang="es">
+      <body className={`text-primary-white`}>
         <Header />
         {children}
         <Footer />

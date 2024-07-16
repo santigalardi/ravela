@@ -16,9 +16,30 @@
   }
 }
 
+@font-face {
+  font-family: 'ravela-Moderniz';
+  src: url('/fonts/ravela-font/Moderniz.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ravela-LTWave';
+  src: url('/fonts/ravela-font/LTWave-Black.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rave-text';
+  src: url('/fonts/ravela-font/LTWaveText-Light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'rave-text', sans-serif;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {

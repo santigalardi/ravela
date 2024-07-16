@@ -8,7 +8,7 @@ import YoutubeLogo from '../assets/icons/Youtube.svg';
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col py-8 justify-between bg-gradient-to-b from-primary-black to-primary-black/20">
+    <footer className="relative flex flex-col py-8 justify-between bg-primary-black">
       {/* <hr className="absolute top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-white to-transparent bg-center md:my-9" /> */}
       <div className="flex flex-col justify-center items-center w-full p-4 sm:p-10">
         <span className="text-center text-sm sm:text-lg mb-6">

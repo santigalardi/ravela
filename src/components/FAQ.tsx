@@ -6,7 +6,7 @@ export default function FAQ() {
       <h2 className="text-2xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
       <Accordion
         title="¿Cuál es la propuesta de Ravelación?"
-        answer={`Nuestra misión es impulsar la escena electrónica emergente de LATAM, dando visibilidad y herramientas a nuevos talentos para que puedan alcanzar su potencial y conectarse con una audiencia. En un ambiente seguro y profesional.
+        answer={`Nuestra misión es impulsar la escena electrónica emergente de LATAM, dando visibilidad y herramientas a nuevos talentos para que puedan alcanzar su potencial y conectarse con una audiencia, en un ambiente seguro y profesional.
 
           Buscamos crear el medio digital de la escena electrónica más grande de LATAM y hacer eventos con lineups por concurso, donde los participantes serán DJs emergentes.`}
       />

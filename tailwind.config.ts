@@ -29,6 +29,10 @@ const config: Config = {
       boxShadow: {
         'custom-red-shadow': '0 0 10px rgba(255, 0, 0, 0.5)',
       },
+      fontFamily: {
+        title: ['Ravela-Moderniz', 'sans-serif'],
+        subtitle: ['Ravela-LTWave', 'sans-serif'],
+      },
     },
   },
   plugins: [

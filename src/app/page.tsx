@@ -23,19 +23,19 @@ export default function Home() {
 
   return (
     <main>
-      <div className="bg-gradient-to-t from-primary-black to-primary-black/70">
+      <div className="bg-primary-black">
         <div
           className="min-h-screen flex flex-col justify-center p-4 sm:p-6 md:p-12 lg:p-16 xl:p-24 bg-cover bg-center"
           // style={{ backgroundImage: "url('/images/background-1.webp')" }}
         >
           <div className="px-4 mb-4">
-            <h1 className="text-center text-primary-white tracking-tighter text-5xl sm:text-8xl md:text-8xl lg:text-8xl xl:text-9xl text-shadow text-shadow-blur-9">
-              RAVELACION
+            <h1 className="font-title text-center text-primary-white tracking-wide text-5xl sm:text-8xl md:text-8xl lg:text-8xl xl:text-9xl text-shadow text-shadow-blur-9">
+              RAVELA
             </h1>
           </div>
           <div className="px-4">
-            <h2 className="sm:text-3xl md:text-4xl lg:text-4xl text-shadow text-center text-primary-purple2">
-              Los DJs del Mañana se Revelan Hoy
+            <h2 className="font-subtitle sm:text-3xl md:text-4xl lg:text-4xl text-shadow text-center text-primary-purple2">
+              LOS DJs DEL FUTURO SE REVELAN HOY
             </h2>
           </div>
         </div>
@@ -52,10 +52,12 @@ export default function Home() {
       >
         <div className="max-w-5xl flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-4xl font-bold text-primary-purple2 text-shadow text-shadow-blur-8 mb-4">
+            <h3 className="text-4xl font-subtitle font-bold text-primary-purple2 text-shadow mb-4">
               ¿Sos DJ o Raver?
             </h3>
-            <p className="text-xl text-shadow">Ayúdanos con una breve encuesta para conocerte mejor.</p>
+            <p className="text-xl text-shadow text-shadow-y-[-1px] text-shadow-x-1 text-shadow-blur-0 textshadow">
+              Ayúdanos con una breve encuesta para conocerte mejor.
+            </p>
           </div>
           <div className="flex-1 flex justify-center">
             <button
