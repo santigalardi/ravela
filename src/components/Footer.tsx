@@ -12,7 +12,7 @@ export default function Footer() {
       {/* <hr className="absolute top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-white to-transparent bg-center md:my-9" /> */}
       <div className="flex flex-col justify-center items-center w-full p-4 sm:p-10">
         <span className="text-center text-sm sm:text-lg mb-6">
-          © 2024 Ravelación. Todos los derechos reservados.
+          © 2024 Ravela. Todos los derechos reservados.
         </span>
         <span className="text-center text-sm mb-4 sm:mb-0">ravelacionmedios@gmail.com</span>
         {/* <ul className="flex gap-4 sm:gap-6">
