@@ -2,8 +2,8 @@ import Accordion from './Accordion';
 
 export default function FAQ() {
   return (
-    <div className="p-2 md:p-8">
-      <h2 className="text-2xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
+    <div className="p-4 md:p-8">
+      <h2 className="font-subtitle text-3xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
       <Accordion
         title="¿Cuál es la propuesta de Ravelación?"
         answer={`Nuestra misión es impulsar la escena electrónica emergente de LATAM, dando visibilidad y herramientas a nuevos talentos para que puedan alcanzar su potencial y conectarse con una audiencia, en un ambiente seguro y profesional.

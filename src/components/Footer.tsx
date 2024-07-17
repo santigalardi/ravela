@@ -1,10 +1,10 @@
 'use client';
 
-import FacebookLogo from '../assets/icons/Facebook.svg';
-import InstagramLogo from '../assets/icons/Instagram.svg';
-import TikTokLogo from '../assets/icons/TikTok.svg';
-// import TwitterLogo from '../assets/icons/Twitter.svg';
-import YoutubeLogo from '../assets/icons/Youtube.svg';
+// import FacebookLogo from '../assets/icons/Facebook.svg';
+// import InstagramLogo from '../assets/icons/Instagram.svg';
+// import TikTokLogo from '../assets/icons/TikTok.svg';
+// // import TwitterLogo from '../assets/icons/Twitter.svg';
+// import YoutubeLogo from '../assets/icons/Youtube.svg';
 
 export default function Footer() {
   return (

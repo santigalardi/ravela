@@ -1,13 +1,13 @@
 'use client';
 
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from 'next/image';
 
 const Header = () => {
   return (
     <header className="absolute top-0 left-0 w-full flex items-center justify-center p-6 bg-transparent">
-      <div className="">
-        <Image src="/ravela-logo.svg" alt="Ravelación Logo" height={160} width={160} />
+      <div>
+        <Image src="/ravela-logo.svg" alt="Ravelación Logo" width={160} height={160} />
       </div>
 
       {/* <Link href="/">

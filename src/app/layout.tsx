@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Header from '@/components/Header';
 import { Poppins } from 'next/font/google';
 import Footer from '@/components/Footer';
 
-const titilium = Poppins({
+const poppins = Poppins({
   weight: '600',
   subsets: ['latin'],
 });
@@ -20,9 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`text-primary-white`}>
-        <Header />
+    <html lang="en">
+      <body className={`text-primary-white ${poppins.className}`}>
         {children}
         <Footer />
       </body>
