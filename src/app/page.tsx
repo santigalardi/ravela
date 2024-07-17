@@ -27,11 +27,11 @@ export default function Home() {
       <div className="bg-primary-black">
         <div
           className="min-h-screen flex justify-center items-center bg-cover bg-center mb-20"
-          style={{ backgroundImage: "url('/images/textura-bg.png')" }}
+          // style={{ backgroundImage: "url('/images/textura-bg.png')" }}
         >
           <div className="p-6 md:p-0 md:pb-16">
             <Image
-              src="/logo-completo-slogan-orange.png"
+              src="/logo-completo-slogan-purple.png"
               width={700}
               height={700}
               alt="Ravela Logo"
