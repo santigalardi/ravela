@@ -52,7 +52,7 @@ export default function Home() {
       >
         <div className="max-w-5xl flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1 text-center md:text-left">
-            <h3 className="mb-4 text-4xl font-bold text-primary-purple3 text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
+            <h3 className="mb-4 text-4xl font-bold text-primary-purple2 text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
               ¿Sos DJ o Raver?
             </h3>
             <p className="text-xl text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="flex-1 flex justify-center">
             <button
-              className="px-8 py-4 bg-primary-purple3 font-bold rounded-sm shadow-lg hover:bg-primary-purple2 transition-colors duration-200"
+              className="px-8 py-4 bg-primary-purple2 font-bold rounded-sm shadow-lg hover:bg-primary-purple transition-colors duration-200"
               onClick={handleParticipate}
             >
               Participar
