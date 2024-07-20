@@ -31,7 +31,7 @@ export default function Home() {
         >
           <div className="p-6 md:p-0 md:pb-16">
             <Image
-              src="/logo-completo-slogan-purple.png"
+              src="/logo-completo-slogan-violeta.png"
               width={700}
               height={700}
               alt="Ravela Logo"
