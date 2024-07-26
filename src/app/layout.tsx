@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import { Poppins } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
+import './globals.css';
 
 const poppins = Poppins({
   weight: '600',
@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Ravelación',
-  description: 'Los DJs del Mañana se Revelan Hoy',
+  title: 'Ravela',
+  description: 'Los DJs del Futuro se Revelan Hoy',
 };
 
 export default function RootLayout({

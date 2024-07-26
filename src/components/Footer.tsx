@@ -1,59 +1,70 @@
 'use client';
 
-// import FacebookLogo from '../assets/icons/Facebook.svg';
-// import InstagramLogo from '../assets/icons/Instagram.svg';
+import Link from 'next/link';
+import FacebookLogo from '../assets/icons/Facebook.svg';
+import InstagramLogo from '../assets/icons/Instagram.svg';
+import YoutubeLogo from '../assets/icons/Youtube.svg';
 // import TikTokLogo from '../assets/icons/TikTok.svg';
-// // import TwitterLogo from '../assets/icons/Twitter.svg';
-// import YoutubeLogo from '../assets/icons/Youtube.svg';
+// import TwitterLogo from '../assets/icons/Twitter.svg';
 
-export default function Footer() {
+const socialLinks = [
+  {
+    href: 'https://www.instagram.com/ravelaok',
+    label: 'Instagram',
+    icon: (
+      <InstagramLogo className="text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
+    ),
+  },
+  {
+    href: 'https://www.facebook.com/ravelaok/',
+    label: 'Facebook',
+    icon: (
+      <FacebookLogo className="w-9 text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
+    ),
+  },
+  {
+    href: 'https://www.youtube.com/@ravelaok',
+    label: 'YouTube',
+    icon: (
+      <YoutubeLogo className="text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
+    ),
+  },
+  // {
+  //   href: 'https://www.tiktok.com/@ravelaok',
+  //   label: 'TikTok',
+  //   icon: <TikTokLogo className="w-10 text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />,
+  // },
+];
+
+const Footer = () => {
   return (
-    <footer className="relative flex flex-col py-8 justify-between bg-primary-black">
-      {/* <hr className="absolute top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-white to-transparent bg-center md:my-9" /> */}
-      <div className="flex flex-col justify-center items-center w-full p-4 sm:p-10">
-        <span className="text-center text-sm sm:text-lg mb-6">
-          © 2024 Ravela. Todos los derechos reservados.
-        </span>
-        <span className="text-center text-sm mb-4 sm:mb-0">ravelacionmedios@gmail.com</span>
-        {/* <ul className="flex gap-4 sm:gap-6">
-          <li>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/ravelacion/?hl=es"
-              className="inline-block hover:scale-125 motion-safe:transition motion-reduce:hover:scale-100"
-            >
-              <InstagramLogo className="text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.tiktok.com/@ravelacion"
-              className="inline-block hover:scale-125 motion-safe:transition motion-reduce:hover:scale-100"
-            >
-              <TikTokLogo className="w-10 text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/profile.php?id=61562014469340"
-              className="inline-block hover:scale-125 motion-safe:transition motion-reduce:hover:scale-100"
-            >
-              <FacebookLogo className="w-9 text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/@Ravelacion"
-              className="inline-block hover:scale-125 motion-safe:transition motion-reduce:hover:scale-100"
-            >
-              <YoutubeLogo className="text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
-            </a>
-          </li>
-        </ul> */}
+    <footer className="relative flex flex-col pt-24 pb-8 bg-primary-black">
+      <hr className="absolute top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-white to-transparent bg-center my-16" />
+      <div className="flex flex-col md:flex-row justify-around items-center">
+        <div className="flex flex-col w-full md:w-2/3 p-6">
+          <span className="text-sm sm:text-lg mb-6 text-center md:text-start">
+            © 2024 Ravela. Todos los derechos reservados.
+          </span>
+        </div>
+        <div className="flex items-center md:p-8">
+          <ul className="flex gap-8">
+            {socialLinks.map(({ href, label, icon }) => (
+              <li key={label}>
+                <Link
+                  target="_blank"
+                  href={href}
+                  aria-label={label}
+                  className="inline-block hover:scale-110 motion-safe:transition motion-reduce:hover:scale-100"
+                >
+                  {icon}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
