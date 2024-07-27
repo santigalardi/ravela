@@ -7,8 +7,6 @@ import Link from 'next/link';
 
 const Countdown: React.FC = () => {
   const targetDate = new Date('2024-07-27T17:00:00').getTime();
-  const now = new Date().getTime();
-  const difference = targetDate - now;
 
   const formattedDate = new Date(targetDate).toLocaleDateString('es-ES', {
     day: 'numeric',
@@ -21,6 +19,9 @@ const Countdown: React.FC = () => {
   });
 
   const calculateTimeLeft = () => {
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+
     let timeLeft = {
       days: '00',
       hours: '00',
@@ -59,17 +60,20 @@ const Countdown: React.FC = () => {
   }, []);
 
   return (
-    <section className="pt-20 pb-40 md:pb-30  flex flex-col gap-y-10 justify-center items-center">
+    <section className="pt-20 pb-40 md:pb-30 flex flex-col gap-y-10 justify-center items-center">
       <p className="text-center text-xl md:text-2xl p-4">
         Próximo evento de Ravela {formattedDate} a las {formattedTime} en...
       </p>
 
       <Link href="https://www.instagram.com/fulanocafe/?hl=es" target="_blank">
-        <Image src={LocationLogo} alt="Ravela Logo" width={900} className="p-4"></Image>
+        <Image src={LocationLogo} alt="Ravela Logo" width={900} className="p-4" />
       </Link>
 
       <div className="flex flex-row gap-x-1 text-primary-white uppercase font-semibold">
-        {difference <= 0 ? (
+        {timeLeft.days === '00' &&
+        timeLeft.hours === '00' &&
+        timeLeft.minutes === '00' &&
+        timeLeft.seconds === '00' ? (
           <div>
             <h3 className="text-xl">¡El evento ha comenzado!🎉</h3>
           </div>
