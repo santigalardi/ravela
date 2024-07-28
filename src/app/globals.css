@@ -37,8 +37,11 @@
   font-style: normal;
 }
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
+  height: 100%;
+  margin: 0;
+  background-color: #191919; /* Asegura que el fondo sea negro */
 }
 
 @layer utilities {

@@ -6,12 +6,10 @@ import ContestSection from '@/components/ContestSection';
 export default function Home() {
   return (
     <main>
-      <div className="bg-primary-black">
-        <MainBanner />
-        <FAQ />
-        {/* <Countdown /> */}
-        <ContestSection />
-      </div>
+      <MainBanner />
+      <FAQ />
+      {/* <Countdown /> */}
+      <ContestSection />
     </main>
   );
 }
