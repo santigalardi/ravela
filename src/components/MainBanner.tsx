@@ -6,7 +6,7 @@ const MainBanner = () => (
       <source src="/videos/textura-background.mp4" type="video/mp4" />
     </video>
     <div className="relative p-6 md:p-0 md:pb-16 z-10">
-      <Image src="/logo-completo-slogan-naranja.png" width={800} height={800} alt="Ravela Logo" priority />
+      <Image src="/wordmark-white.png" width={800} height={800} alt="Ravela Logo" priority />
     </div>
   </section>
 );

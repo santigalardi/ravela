@@ -38,7 +38,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="relative flex flex-col pt-24 pb-8 bg-primary-black">
+    <footer className="relative flex flex-col pt-24 pb-8">
       <hr className="absolute top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-white to-transparent bg-center my-16" />
       <div className="flex flex-col md:flex-row justify-around items-center">
         <div className="flex flex-col w-full md:w-2/3 p-6">

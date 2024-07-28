@@ -13,14 +13,12 @@ const Accordion = ({ title, answer }: { title: string; answer: string }) => {
   ));
 
   return (
-    <div className="py-6 mx-4 border border-transparent border-t-primary-gray border-double">
+    <div className="py-6 mx-4 border border-transparent border-t-primary-white border-double">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between items-center w-full"
       >
-        <span className="font-subtitle font-bold text-primary-purple2 text-start  text-md md:text-xl">
-          {title}
-        </span>
+        <span className="font-bold text-primary-purple2 text-start text-md md:text-2xl">{title}</span>
         <svg
           className="fill-primary-purple2 shrink-0 ml-8"
           width="16"

@@ -37,11 +37,10 @@
   font-style: normal;
 }
 
-html,
 body {
   height: 100%;
   margin: 0;
-  background-color: #191919; /* Asegura que el fondo sea negro */
+  background-color: #000000;
 }
 
 @layer utilities {

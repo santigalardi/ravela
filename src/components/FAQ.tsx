@@ -3,26 +3,26 @@ import Accordion from './Accordion';
 export default function FAQ() {
   return (
     <section className="p-0 md:p-8 mb-12">
-      <h2 className="font-subtitle text-3xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
+      <h2 className="font-title text-3xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
       <Accordion
         title="¿Cuál es la propuesta de Ravela?"
-        answer={`Nuestra misión es impulsar la escena electrónica emergente de LATAM, dando visibilidad y herramientas a nuevos talentos para que puedan alcanzar su potencial y conectarse con una audiencia, en un ambiente seguro y profesional.
+        answer={`Nuestra misión es potenciar la escena electrónica emergente en LATAM al proporcionar visibilidad y herramientas a nuevos talentos. Queremos ayudarlos a alcanzar su máximo potencial y conectarse con una audiencia en un entorno seguro y profesional.
 
-          Buscamos crear el medio digital de la escena electrónica más grande de LATAM y hacer eventos con lineups por concurso, donde los participantes serán DJs emergentes.`}
+          Nos comprometemos a establecer el medio digital líder en la escena electrónica de LATAM y a organizar eventos con lineups seleccionados a través de concursos, donde los participantes serán DJs emergentes.`}
       />
       <Accordion
         title="¿Cómo funcionará el medio digital?"
-        answer="Crearemos contenido diverso y de alta calidad por todas las plataformas y redes sociales con una entidad muy bien definida. De esta manera buscaremos crear una gran comunidad de Ravers y DJs, donde los artistas emergentes podrán tener la exposición que merecen."
+        answer="Desarrollaremos contenido variado y de alta calidad a través de todas las plataformas y redes sociales, con una identidad claramente definida. Nuestro objetivo es construir una comunidad sólida de Ravers y DJs, proporcionando a los artistas emergentes la visibilidad que merecen y facilitando su conexión con una audiencia más amplia."
       />
       <Accordion
         title="¿Cómo funciona el concurso?"
-        answer={`Creamos un proceso donde los sets de quienes participen del concurso van a ser evaluados por medio de herramientas creadas exclusivamente para esto. Dentro de los criterios a evaluar entrarán: skills, creatividad, storytelling del set, entre otras cosas. Es un proceso que busca ser 100% objetivo y que quienes ganen, lo logren por meritocracia. 
+        answer={`El concurso se basa en un proceso riguroso en el que los sets de los participantes serán evaluados mediante herramientas diseñadas exclusivamente para este propósito. Los criterios de evaluación incluyen habilidades técnicas, creatividad y la narrativa del set, entre otros aspectos. Este enfoque busca garantizar un proceso 100% objetivo, donde los ganadores sean seleccionados exclusivamente por mérito.
 
-          Los/as DJs que ganen participarán de un evento en un buen spot donde habrá un equipo encargado de generar contenido exclusivo para Ravela como medio digital. Aqui es donde el DJ emergente empieza a tener llegada a nuevo público y bajo un marco de mucha calidad.`}
+          Los DJs ganadores tendrán la oportunidad de participar en un evento destacado, donde un equipo especializado creará contenido exclusivo para Ravela. Este evento representa una plataforma de alta calidad para que los DJs emergentes se conecten con una nueva audiencia y amplíen su alcance.`}
       />
       <Accordion
         title="¿Cómo puedo participar del concurso?"
-        answer="En primeras instancias los participantes serán seleccionados por el staff de Ravela. En un futuro las inscripciones se abrirán a todo el público ya que somos conscientes de que todo artista merece una gran oportunidad para demostrar su potencial."
+        answer="En las etapas iniciales, los participantes serán seleccionados por el equipo de Ravela. En el futuro, planeamos abrir las inscripciones al público en general, reconociendo que cada artista merece una oportunidad para demostrar su potencial."
       />
     </section>
   );
