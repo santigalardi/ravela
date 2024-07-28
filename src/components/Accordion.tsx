@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+'use client';
+
+import { Fragment, useState } from 'react';
 
 const Accordion = ({ title, answer }: { title: string; answer: string }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   const formattedAnswer = answer.split('\n').map((line, index) => (
-    <React.Fragment key={index}>
+    <Fragment key={index}>
       {line}
       <br />
-    </React.Fragment>
+    </Fragment>
   ));
 
   return (

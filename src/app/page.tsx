@@ -1,5 +1,3 @@
-'use client';
-
 import Countdown from '@/components/Countdown';
 import FAQ from '@/components/FAQ';
 import MainBanner from '@/components/MainBanner';
@@ -11,7 +9,7 @@ export default function Home() {
       <div className="bg-primary-black">
         <MainBanner />
         <FAQ />
-        <Countdown />
+        {/* <Countdown /> */}
         <ContestSection />
       </div>
     </main>

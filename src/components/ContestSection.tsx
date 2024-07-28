@@ -1,7 +1,10 @@
+'use client';
+
 const ContestSection = () => {
   const handleParticipate = () => {
     window.open('https://forms.gle/CcLD5iS5fauhb6TK6', '_blank');
   };
+
   return (
     <section
       id="contest"
@@ -20,7 +23,7 @@ const ContestSection = () => {
         <div className="flex-1 flex justify-center">
           <button
             className="px-8 py-4 bg-primary-purple2 font-bold rounded-sm shadow-lg hover:bg-primary-purple transition-colors duration-200"
-            onClick={handleParticipate}
+            onClick={() => handleParticipate()}
           >
             Participar
           </button>
