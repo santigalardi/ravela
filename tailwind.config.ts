@@ -32,7 +32,6 @@ const config: Config = {
       },
       fontFamily: {
         title: ['Ravela-Moderniz', 'sans-serif'],
-        subtitle: ['Ravela-LTWave', 'sans-serif'],
       },
     },
   },

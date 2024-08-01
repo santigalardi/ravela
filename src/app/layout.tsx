@@ -11,7 +11,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Ravela',
-  description: 'Los DJs del Futuro se Revelan Hoy',
+  description:
+    'Ravela - Los DJs del Mañana se Revelan Hoy. Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo.',
 };
 
 export default function RootLayout({
@@ -21,16 +22,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-SZY2J22GZQ" />
-      <Script>
-        {`  window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-SZY2J22GZQ')`}
-      </Script>
+      <head>
+        <meta
+          name="description"
+          content="Ravela - Los DJs del Mañana se Revelan Hoy. Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo."
+        />
+        <link rel="canonical" href="https://ravela.com.ar" />
+      </head>
       <body className={`text-primary-white ${poppins.className}`}>
         {children}
         <Footer />
+        {/* Google Analytics Script */}
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-SZY2J22GZQ" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SZY2J22GZQ');
+          `}
+        </Script>
       </body>
     </html>
   );
