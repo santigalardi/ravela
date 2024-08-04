@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player';
 
 const LastSetSection = () => {
   const [isClient, setIsClient] = useState(false);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -14,7 +14,9 @@ const LastSetSection = () => {
       setIsLargeScreen(window.innerWidth >= 768);
     };
 
+    handleResize();
     window.addEventListener('resize', handleResize);
+
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
