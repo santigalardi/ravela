@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const MainBanner = () => (
-  <section className="relative min-h-screen flex justify-center items-center bg-cover bg-center mb-20 overflow-hidden">
+  <section className="relative min-h-screen flex justify-center items-center bg-cover bg-center overflow-hidden">
     <h1 className="sr-only">Ravela</h1>
     <h2 className="sr-only">Ravela - Próximos Eventos de Música Electrónica</h2>
     <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
