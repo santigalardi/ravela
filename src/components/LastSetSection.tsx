@@ -21,7 +21,7 @@ const LastSetSection = () => {
   }, []);
 
   return (
-    <div className={`flex h-[80vh] md:min-h-screen justify-center items-center`}>
+    <section className={`flex h-[80vh] md:min-h-screen justify-center items-center`}>
       {isClient && (
         <ReactPlayer
           url="https://www.youtube.com/watch?v=Z4fWrm3Fvvk"
@@ -32,7 +32,7 @@ const LastSetSection = () => {
           height={isLargeScreen ? '90%' : '360px'}
         />
       )}
-    </div>
+    </section>
   );
 };
 

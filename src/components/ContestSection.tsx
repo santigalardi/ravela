@@ -2,7 +2,7 @@
 
 const ContestSection = () => {
   const handleParticipate = () => {
-    window.open('https://forms.gle/CcLD5iS5fauhb6TK6', '_blank');
+    window.open('/concurso', '_blank');
   };
 
   return (
@@ -13,11 +13,11 @@ const ContestSection = () => {
     >
       <div className="max-w-5xl flex flex-col md:flex-row items-center gap-16">
         <div className="flex-1 text-center md:text-left">
-          <h3 className="mb-4 text-4xl font-bold text-primary-purple2 text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
-            ¿Sos DJ o Raver?
+          <h3 className="mb-4 font-title text-4xl font-bold text-primary-purple2 text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
+            ¿Sos DJ y queres destacar?
           </h3>
           <p className="text-xl text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
-            Ayúdanos con una breve encuesta para conocerte mejor.
+            Únete a nuestro concurso y gana la oportunidad de tocar en un evento RAVELA.
           </p>
         </div>
         <div className="flex-1 flex justify-center">

@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.2.13",
+    "@clerk/themes": "^2.1.17",
     "@designbycode/tailwindcss-text-shadow": "^2.0.0",
+    "@supabase/supabase-js": "^2.45.1",
+    "lucide-react": "^0.424.0",
     "next": "14.2.4",
     "next-svgr": "^0.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.52.2",
     "react-player": "^2.16.0"
   },
   "devDependencies": {

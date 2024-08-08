@@ -1,37 +1,45 @@
 'use client';
 
-// import Link from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image';
+import { ClerkLoaded, ClerkLoading, UserButton } from '@clerk/nextjs';
+import { usePathname } from 'next/navigation';
+import { Loader2 } from 'lucide-react';
 
 const Header = () => {
-  return (
-    <header className="absolute top-0 left-0 w-full flex items-center justify-center p-6 bg-transparent">
-      <div>
-        <Image src="/ravela-logo.svg" alt="Ravelación Logo" width={160} height={160} />
-      </div>
+  const pathname = usePathname();
 
-      {/* <Link href="/">
-        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} priority className="cursor-pointer" />
-      </Link> */}
-      {/* <nav>
-        <ul className="flex space-x-4">
+  return (
+    <header className="absolute top-0 left-0 w-full flex items-center justify-between p-6 px-12 bg-transparent z-10">
+      <div>
+        {pathname === '/concurso' && (
+          <Link href="/">
+            <Image src="/ravela-logo.svg" alt="Ravelación Logo" width={60} height={60} />
+          </Link>
+        )}
+      </div>
+      <nav>
+        <ul className="flex space-x-6">
           <li>
-            <Link href="/" className="hover:text-primary-orange text-shadow">
-              Inicio
+            <Link href="/#faqs" className="text-lg text-shadow">
+              FAQs
             </Link>
           </li>
           <li>
-            <Link href="/#about-vision" className="hover:text-primary-orange text-shadow">
-              Nosotros
+            <Link href="/#contest" className="text-lg text-shadow">
+              Concurso
             </Link>
           </li>
           <li>
-            <Link href="/#contest" className="hover:text-primary-orange text-shadow">
-              Encuesta
-            </Link>
+            <ClerkLoaded>
+              <UserButton />
+            </ClerkLoaded>
+            <ClerkLoading>
+              <Loader2 className="size-8 animate-spin text-slate-400" />
+            </ClerkLoading>
           </li>
         </ul>
-      </nav> */}
+      </nav>
     </header>
   );
 };

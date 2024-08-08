@@ -2,7 +2,7 @@ import Accordion from './Accordion';
 
 export default function FAQ() {
   return (
-    <section className="p-0 md:p-8 my-10">
+    <section id="faqs" className="p-0 md:p-8 my-10">
       <h2 className="font-title text-3xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
       <Accordion
         title="¿Cuál es la propuesta de Ravela?"
