@@ -1,10 +1,12 @@
 import Image from 'next/image';
+import Header from './Header';
 
 const MainBanner = () => (
-  <section className="relative min-h-screen flex justify-center items-center bg-cover bg-center overflow-hidden">
+  <section className="relative min-h-screen flex justify-center items-center overflow-hidden">
+    <Header />
     <h1 className="sr-only">Ravela</h1>
     <h2 className="sr-only">Ravela - Próximos Eventos de Música Electrónica</h2>
-    <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+    <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
       <source src="/videos/textura-background.mp4" type="video/mp4" />
     </video>
     <div className="relative p-6 md:p-0 md:pb-16 z-10">

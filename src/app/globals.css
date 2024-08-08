@@ -45,3 +45,45 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Estilos para el autofill en navegadores modernos */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #f2f2f2; /* Texto blanco */
+  -webkit-box-shadow: 0 0 0px 1000px #616161 inset; /* Fondo oscuro */
+}
+
+input:-moz-autofill {
+  color: #f2f2f2; /* Texto blanco */
+  background-color: #616161; /* Fondo oscuro */
+}
+
+input:-ms-autofill {
+  color: #f2f2f2; /* Texto blanco */
+  background-color: #616161; /* Fondo oscuro */
+}
+
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f2f2f2; /* Texto blanco */
+}
+
+/* Ocultar flechas en campos de número */
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.glass-effect {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}

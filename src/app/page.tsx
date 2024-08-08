@@ -3,6 +3,7 @@ import FAQ from '@/components/FAQ';
 import MainBanner from '@/components/MainBanner';
 import ContestSection from '@/components/ContestSection';
 import LastSetSection from '@/components/LastSetSection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       {/* <Countdown /> */}
       <FAQ />
       <ContestSection />
+      <Footer />
     </main>
   );
 }
