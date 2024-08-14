@@ -151,7 +151,7 @@ export function PersonalDataForm() {
 
         <div>
           <h3 className="text-3xl">Detalles del Concurso</h3>
-          <p>📆 Tiempo Límite para participar: miércoles 21/8 a las 17 hs</p>
+          <p>📆 Tiempo Límite para participar: hasta el día lunes 19/8</p>
           <p>🎧 Podes presentar audio set o video set</p>
           <p>🕙 La duración del set debe ser de mínimo 30 minutos y máximo 1 hora</p>
         </div>
