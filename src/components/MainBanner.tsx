@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Header from './Header';
+import NavBar from './NavBar';
 
 const MainBanner = () => (
   <section className="relative min-h-screen flex justify-center items-center overflow-hidden">
-    <Header />
+    <NavBar />
     <h1 className="sr-only">Ravela</h1>
     <h2 className="sr-only">Ravela - Próximos Eventos de Música Electrónica</h2>
     <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">

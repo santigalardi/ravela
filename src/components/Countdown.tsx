@@ -6,7 +6,7 @@ import LocationLogo from '@/assets/images/fulano-wordmark.png';
 import Link from 'next/link';
 
 const Countdown: React.FC = () => {
-  const targetDate = new Date('2024-07-27T17:00:00').getTime();
+  const targetDate = new Date('2024-08-26T17:00:00').getTime();
 
   const formattedDate = new Date(targetDate).toLocaleDateString('es-ES', {
     day: 'numeric',
@@ -62,7 +62,7 @@ const Countdown: React.FC = () => {
   return (
     <section className="pt-20 pb-40 md:pb-30 flex flex-col gap-y-10 justify-center items-center">
       <p className="text-center text-xl md:text-2xl p-4">
-        Próximo evento de Ravela {formattedDate} a las {formattedTime} en...
+        Próximo DJ set de Ravela {formattedDate} a las {formattedTime} en...
       </p>
 
       <Link href="https://www.instagram.com/fulanocafe/?hl=es" target="_blank">
