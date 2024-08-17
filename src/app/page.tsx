@@ -7,11 +7,11 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-w-[320px]">
       <MainBanner />
       <LastSetSection />
-      {/* <Countdown /> */}
       <FAQ />
+      {/* <Countdown /> */}
       <ContestSection />
       <Footer />
     </main>

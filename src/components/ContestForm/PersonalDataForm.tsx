@@ -132,32 +132,32 @@ export function PersonalDataForm() {
 
   if (showNextStep) {
     return (
-      <div className="flex flex-col gap-8 p-4 md:p-16 border rounded-md border-primary-purple m-10 glass-effect">
-        <h2 className="text-4xl text-center">¡Felicitaciones!</h2>
-        <h3 className="text-xl">
+      <div className="flex flex-col min-w-[320px] gap-8 md:m-10 p-6 md:p-16 border rounded-md border-primary-purple glass-effect">
+        <h2 className="text-2xl md:text-3xl text-center">¡Felicitaciones!</h2>
+        <h3 className="text-lg md:text-2xl">
           Fuiste seleccionado/a para participar del concurso. Completa el formulario para que podamos evaluar
           tu DJ set.
         </h3>
 
-        <h3 className="text-3xl text-center">⚠️ LEER ATENTAMENTE! ⚠️</h3>
+        <h3 className="text-2xl md:text-3xl text-center">⚠️LEER ATENTAMENTE!⚠️</h3>
 
-        <div>
-          <h3 className="text-3xl">Detalles del evento</h3>
+        <div className="md:text-lg">
+          <h3 className="text-2xl md:text-3xl">Detalles del evento</h3>
           <p>📍 Ubicación: Museo de las mujeres. Rivera Indarte 55, Córdoba, Argentina</p>
           <p>📆 Fecha del evento: Lunes 26/8</p>
           <p>🕙 Horario: de 17 a 18:30 hs</p>
           <p>✏️ Necesitamos que tu disponibilidad horaria sea de 15 a 18:30hs </p>
         </div>
 
-        <div>
-          <h3 className="text-3xl">Detalles del Concurso</h3>
+        <div className="md:text-lg">
+          <h3 className="text-2xl md:text-3xl">Detalles del Concurso</h3>
           <p>📆 Tiempo Límite para participar: hasta el día lunes 19/8</p>
           <p>🎧 Podes presentar audio set o video set</p>
           <p>🕙 La duración del set debe ser de mínimo 30 minutos y máximo 1 hora</p>
         </div>
 
-        <div>
-          <h3 className="text-3xl">El DJ ganador recibirá...</h3>
+        <div className="md:text-lg">
+          <h3 className="text-2xl md:text-3xl">El DJ ganador recibirá...</h3>
           <p>🎥 Presencia en videoset del evento para el canal de YouTube de Ravela</p>
           <p>
             📸 Álbum de fotos del día del evento para que pueda sumar a su presskit (contamos con fotógrafo y
