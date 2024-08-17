@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'Ravela',
   description: 'Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo.',
   openGraph: {
-    title: 'Ravela - Los DJs del Mañana',
+    title: 'Ravela',
     description: 'Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo con Ravela.',
     url: 'https://ravela.com.ar',
     images: [
