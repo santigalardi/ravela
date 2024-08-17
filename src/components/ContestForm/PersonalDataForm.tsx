@@ -76,10 +76,10 @@ export function PersonalDataForm() {
       }
 
       if (data.length > 0) {
-        const nextStepValue = data[0].nextStep; // Assuming nextStep is a boolean
-        setShowNextStep(nextStepValue); // Set greeting state based on nextStep
+        const nextStepValue = data[0].nextStep;
+        setShowNextStep(nextStepValue);
       }
-      setLoading(false); // Hide loader after checking
+      setLoading(false);
     } else {
       setLoading(false);
     }
@@ -183,7 +183,7 @@ export function PersonalDataForm() {
 
   if (hasSubmitted) {
     return (
-      <div className="flex flex-col items-center gap-8 p-4 md:p-16 border rounded-md border-primary-purple m-10 glass-effect">
+      <div className="flex flex-col items-center gap-8 p-4 md:p-16 md:m-10 glass-effect">
         <p className="text-2xl">¡Gracias por participar! 🎉</p>
         <p className="text-xl">Nos contactaremos contigo en los próximos días</p>
         <p className="text-xl">Cualquier duda o consulta podés escribirnos por instagram @ravelaok</p>
@@ -194,10 +194,10 @@ export function PersonalDataForm() {
   return (
     <>
       <form
-        className="flex flex-col gap-4 p-4 md:p-16 border rounded-md border-primary-purple m-10 glass-effect"
+        className="flex flex-col gap-4 p-4 md:p-16 md:m-10 glass-effect"
         onSubmit={handleSubmit(onHandleFormSubmit)}
       >
-        <h3 className="text-xl font-bold mb-8">
+        <h3 className="text-xl mb-8">
           Completa este formulario para postularte. <br /> Los seleccionados serán contactados para participar
           oficialmente en el concurso.
         </h3>

@@ -12,8 +12,21 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Ravela',
-  description:
-    'Ravela - Los DJs del Mañana se Revelan Hoy. Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo.',
+  description: 'Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo.',
+  openGraph: {
+    title: 'Ravela - Los DJs del Mañana',
+    description: 'Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo con Ravela.',
+    url: 'https://ravela.com.ar',
+    images: [
+      {
+        url: 'https://ravela.com.ar/perfil.png',
+        width: 800,
+        height: 600,
+        alt: 'Ravela Logo',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

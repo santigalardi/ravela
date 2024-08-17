@@ -28,7 +28,7 @@ const InputField: React.FC<InputFieldProps> = ({
         type={type}
         defaultValue={defaultValue}
         {...register(id, { required })}
-        className="bg-primary-darkgray h-10 px-4 rounded-md outline-none focus:outline-primary-purple autofill:bg-primary-darkgray autofill:text-white"
+        className="bg-primary-black h-10 px-4 rounded-md outline-none focus:outline-primary-white autofill:bg-primary-darkgray autofill:text-white"
         required={required}
       />
     </div>
