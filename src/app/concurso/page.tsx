@@ -12,7 +12,9 @@ const ContestPage = () => {
       style={{ backgroundImage: "url('/images/pasillo-2.webp')" }}
     >
       <NavBar />
-      <h2 className="font-title text-4xl font-bold mb-12 text-center">Concurso</h2>
+      <h2 className="font-title text-4xl font-bold mb-12 text-center text-shadow text-shadow-x-1">
+        Concurso
+      </h2>
       <FormProvider>
         <PersonalDataForm />
       </FormProvider>
