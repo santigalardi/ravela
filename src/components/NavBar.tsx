@@ -14,7 +14,22 @@ const NavBar = () => {
       <div>
         <div className={`md:pl-10 ${pathname === '/' && 'opacity-0'}`}>
           <Link href="/">
-            <Image src="/ravela-logo.svg" alt="Ravelación Logo" width={80} height={60} />
+            <div className="relative w-[80px] h-[60px]">
+              <Image
+                src="/ravela-logo.svg"
+                alt="Ravelación Logo"
+                width={80}
+                height={60}
+                className="absolute inset-0 transition-opacity duration-300 hover:opacity-0"
+              />
+              <Image
+                src="/ravela-logo-violet.svg"
+                alt="Ravelación Logo Violet"
+                width={80}
+                height={60}
+                className="absolute inset-0 transition-opacity duration-300 opacity-0 hover:opacity-100"
+              />
+            </div>
           </Link>
         </div>
       </div>
