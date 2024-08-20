@@ -4,7 +4,7 @@ import Link from 'next/link';
 import FacebookLogo from '../assets/icons/Facebook.svg';
 import InstagramLogo from '../assets/icons/Instagram.svg';
 import YoutubeLogo from '../assets/icons/Youtube.svg';
-// import TikTokLogo from '../assets/icons/TikTok.svg';
+import TikTokLogo from '../assets/icons/TikTok.svg';
 // import TwitterLogo from '../assets/icons/Twitter.svg';
 
 const socialLinks = [
@@ -16,7 +16,7 @@ const socialLinks = [
     ),
   },
   {
-    href: 'https://www.facebook.com/ravelaok/',
+    href: 'https://www.facebook.com/ravelaoficial/',
     label: 'Facebook',
     icon: (
       <FacebookLogo className="w-9 text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
@@ -29,11 +29,13 @@ const socialLinks = [
       <YoutubeLogo className="text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
     ),
   },
-  // {
-  //   href: 'https://www.tiktok.com/@ravelaok',
-  //   label: 'TikTok',
-  //   icon: <TikTokLogo className="w-10 text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />,
-  // },
+  {
+    href: 'https://www.tiktok.com/@ravelaok',
+    label: 'TikTok',
+    icon: (
+      <TikTokLogo className="w-10 text-primary transition-colors duration-300 hover:text-primary-purple motion-reduce:duration-0" />
+    ),
+  },
 ];
 
 const Footer = () => {
