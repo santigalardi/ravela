@@ -2,17 +2,18 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ClerkLoaded, ClerkLoading, UserButton } from '@clerk/nextjs';
+import { ClerkLoaded, ClerkLoading, UserButton, useUser } from '@clerk/nextjs';
 import { usePathname } from 'next/navigation';
 import { Loader2 } from 'lucide-react';
 
 const NavBar = () => {
+  const { isSignedIn } = useUser();
   const pathname = usePathname();
 
   return (
-    <header className="absolute top-0 left-0 w-full flex items-center justify-between p-6 px-12 bg-transparent z-20">
+    <header className="absolute top-0 left-0 h-24 w-full flex items-center justify-between px-8 z-20 transition-all duration-300">
       <div>
-        <div className={`md:pl-10 ${pathname === '/' && 'opacity-0'}`}>
+        <div className={`md:pl-10 ${pathname === '/' && 'hidden'}`}>
           <Link href="/">
             <div className="relative w-[80px] h-[60px]">
               <Image
@@ -35,19 +36,25 @@ const NavBar = () => {
       </div>
       <nav>
         <ul className="flex justify-center items-center space-x-6">
-          <li className="transition-transform hover:scale-105">
-            <Link href="/#faqs" className="text-lg text-shadow">
+          <li className="transition hover:text-primary-gray">
+            <Link href="/#faqs" className="text-md text-shadow">
               FAQs
             </Link>
           </li>
-          <li className="transition-transform hover:scale-105">
-            <Link href="/#contest" className="text-lg text-shadow">
-              Concurso
+          <li className="transition hover:text-primary-gray">
+            <Link href="/concurso" className="text-md text-shadow">
+              CONCURSO
             </Link>
           </li>
-          <li>
+          <li className="transition hover:text-primary-gray">
             <ClerkLoaded>
-              <UserButton />
+              {isSignedIn ? (
+                <UserButton />
+              ) : (
+                <Link href="/sign-in" className="text-shadow text-md">
+                  LOGIN OR SIGN UP
+                </Link>
+              )}
             </ClerkLoaded>
             <ClerkLoading>
               <Loader2 className="size-8 animate-spin text-slate-400" />
