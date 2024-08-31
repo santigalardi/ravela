@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import NavBar from './NavBar';
 
 const MainBanner = () => (
   <section id="main-banner" className="min-h-screen flex justify-center items-center overflow-hidden m-0">
