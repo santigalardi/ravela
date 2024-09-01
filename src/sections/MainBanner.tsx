@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const MainBanner = () => (
+export const MainBanner = () => (
   <section id="main-banner" className="min-h-screen flex justify-center items-center overflow-hidden m-0">
     <h1 className="sr-only">Ravela</h1>
     <h2 className="sr-only">Ravela - Próximos Eventos de Música Electrónica</h2>
