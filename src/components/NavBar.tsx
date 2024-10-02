@@ -46,11 +46,11 @@ const NavBar = () => {
                 ENTREVISTAS
               </Link>
             </li>
-            <li className="transition hover:text-primary-gray">
+            {/* <li className="transition hover:text-primary-gray">
               <Link href="/concurso" className="text-md text-shadow">
                 CONCURSO
               </Link>
-            </li>
+            </li> */}
             <li className="transition hover:text-primary-gray">
               <Link href="/#faqs" className="text-md text-shadow">
                 FAQs
