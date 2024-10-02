@@ -6,7 +6,7 @@ export async function GET(request: Request, { params }: { params: { id: string }
 
   try {
     const { data: interview, error } = await supabase
-      .from('entrevistas')
+      .from('interviews')
       .select('*')
       .eq('id', id)
       .order('created_at', { ascending: false })

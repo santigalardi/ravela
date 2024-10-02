@@ -12,7 +12,7 @@ const InterviewsPage = () => {
   return (
     <main className="min-w-[320px]">
       <NavBar />
-      <section className="pt-28 flex flex-col">
+      <section className="pt-28 flex flex-col min-h-screen">
         {loading ? (
           <div className="min-h-[400px] flex justify-center items-center">
             <Loader />
