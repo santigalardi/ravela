@@ -5,7 +5,7 @@ export async function GET() {
   try {
     // Consulta todas las entrevistas de la tabla 'entrevistas'
     const { data: interviews, error } = await supabase
-      .from('entrevistas')
+      .from('interviews')
       .select('*')
       .order('created_at', { ascending: false });
 
