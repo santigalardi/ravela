@@ -2,8 +2,8 @@ import Accordion from '@/components/Accordion';
 
 export default function FAQ() {
   return (
-    <section id="faqs" className="p-0 md:p-8 my-10">
-      <h2 className="font-title text-3xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
+    <section id="faqs" className="p-0 md:px-8 max-w-[1440px] mx-auto mb-12">
+      <h2 className="font-title text-4xl font-bold mb-16 text-center">Preguntas Frecuentes</h2>
       <Accordion
         title="¿Cuál es la propuesta de Ravela?"
         answer={`Nuestra misión es potenciar la escena electrónica emergente en LATAM al proporcionar visibilidad y herramientas a nuevos talentos. Queremos ayudarlos a alcanzar su máximo potencial y conectarse con una audiencia en un entorno seguro y profesional.

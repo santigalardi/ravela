@@ -132,7 +132,7 @@ export function PersonalDataForm() {
 
   if (showNextStep) {
     return (
-      <div className="flex flex-col min-w-[320px] gap-8 md:m-10 p-6 md:p-16 border rounded-md border-primary-purple glass-effect">
+      <div className="flex flex-col min-w-[320px] max-w-[1440px] mx-auto gap-8 md:m-10 p-6 md:p-16 border rounded-md border-primary-purple glass-effect">
         <h2 className="text-2xl md:text-3xl text-center">¡Felicitaciones!</h2>
         <h3 className="text-lg md:text-2xl">
           Fuiste seleccionado/a para participar del concurso. Completa el formulario para que podamos evaluar
@@ -183,7 +183,7 @@ export function PersonalDataForm() {
 
   if (hasSubmitted) {
     return (
-      <div className="flex flex-col items-center gap-8 p-4 md:p-16 md:m-10 glass-effect">
+      <div className="flex flex-col items-center gap-8 p-4 md:p-16 md:m-10 glass-effect max-w-[1440px] mx-auto">
         <p className="text-2xl">¡Gracias por participar! 🎉</p>
         <p className="text-xl">Nos contactaremos contigo en los próximos días</p>
         <p className="text-xl">Cualquier duda o consulta podés escribirnos por instagram @ravelaok</p>
@@ -192,7 +192,7 @@ export function PersonalDataForm() {
   }
 
   return (
-    <>
+    <div className="max-w-[1440px] mx-auto">
       <form
         className="flex flex-col gap-4 p-4 md:p-16 md:m-10 glass-effect"
         onSubmit={handleSubmit(onHandleFormSubmit)}
@@ -221,6 +221,6 @@ export function PersonalDataForm() {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 }

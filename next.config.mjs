@@ -1,9 +1,9 @@
-// next.config.mjs
-
 import withSvgr from 'next-svgr';
 
 const nextConfig = {
-  // Otras configuraciones de Next.js
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
 };
 
 export default withSvgr(nextConfig);
