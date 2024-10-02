@@ -31,7 +31,7 @@ const ScrollToUpButton = () => {
     <button
       id="scroll-to-top"
       aria-label="Volver al inicio de la página"
-      className={`fixed z-30 group bottom-2 right-4 flex size-12 items-center justify-center rounded-lg border-2 border-primary-white bg-black/10 text-primary backdrop-blur hover:border-primary-purple2 hover:scale-105 hover:border-accent motion-safe:transition ${
+      className={`fixed z-30 group bottom-2 right-4 flex size-12 items-center justify-center rounded-lg border-2 border-primary-white bg-black/40 text-primary backdrop-blur hover:border-primary-purple2 hover:scale-105 hover:border-accent motion-safe:transition ${
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       onClick={scrollToTop}

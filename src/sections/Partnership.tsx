@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Partership = () => {
+const Partnership = () => {
   const partners = [
     {
       name: 'Coca Cola',
@@ -15,9 +15,9 @@ export const Partership = () => {
   ];
 
   return (
-    <div id="partnership" className="p-28 bg-gradient-to-t from-black to-primary-purple2/90 text-center">
+    <div id="partnership" className="p-32 text-center">
       <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">Patrocinadores</h3>
-      <p className="text-lg mb-12">Ravelación puede llevarse a cabo gracias a la colaboración de...</p>
+      <p className="text-lg mb-12">Ravela puede llevarse a cabo gracias a la colaboración de...</p>
       <div className="flex flex-wrap justify-center gap-6 md:gap-8">
         {partners.map((partner) => (
           <a
@@ -39,3 +39,5 @@ export const Partership = () => {
     </div>
   );
 };
+
+export default Partnership;

@@ -7,7 +7,7 @@ import './globals.css';
 import ScrollToUpButton from '@/components/ScrollToUpButton';
 
 const poppins = Poppins({
-  weight: '600',
+  weight: ['500', '600', '700', '800'],
   subsets: ['latin'],
 });
 
@@ -53,7 +53,7 @@ export default function RootLayout({
           />
           <link rel="canonical" href="https://ravela.com.ar" />
         </head>
-        <body className={`text-primary-white ${poppins.className}`}>
+        <body className={`text-primary-white ${poppins.className} mx-auto`}>
           <ScrollToUpButton />
           {children}
           {/* Google Analytics Script */}

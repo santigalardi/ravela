@@ -13,7 +13,7 @@ const ContestSection = () => {
     >
       <div className="max-w-5xl flex flex-col md:flex-row items-center gap-16">
         <div className="flex-1 text-center md:text-left">
-          <h3 className="mb-4 font-title text-4xl font-bold text-primary-purple2 text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
+          <h3 className="mb-4 font-title text-4xl font-bold text-primary-purple2 text-shadow text-shadow-x-[0px] text-shadow-blur-4">
             ¿Sos DJ y queres destacar?
           </h3>
           <p className="text-xl text-shadow text-shadow-x-[-1px] text-shadow-blur-4">
