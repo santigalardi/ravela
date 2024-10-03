@@ -22,9 +22,9 @@ const InterviewPage = ({ params }: { params: { id: string } }) => {
         ) : error ? (
           <div className="text-center py-10">Error: {error}</div>
         ) : interview ? (
-          <div className="flex flex-col mb-28 gap-8 lg:ml-32 lg:pr-80 relative">
+          <div className="flex flex-col mb-28 gap-8 lg:ml-32 lg:pr-80 relative max-w-7xl">
             <h2 className="font-title text-4xl">{interview.name}</h2>
-            <p className="bg-primary-gray font-mono text-md text-gray-600">
+            <p className="bg-primary-purple font-mono text-md text-white">
               {formatDate(interview.created_at)}
             </p>
             <div className="flex justify-between items-center gap-28">
