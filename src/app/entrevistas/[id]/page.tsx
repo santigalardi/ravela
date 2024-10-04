@@ -33,7 +33,33 @@ const InterviewPage = ({ params }: { params: { id: string } }) => {
 
             <Image src={interview.image} alt={interview.name} width={700} height={500} />
 
-            <div className="text-lg">{formatInterviewText(JSON.parse(interview.interview_text))}</div>
+            <div className="text-lg">
+              {formatInterviewText(
+                JSON.parse(interview.interview_text),
+                interview.images,
+                interview.soundcloud_player
+              )}
+            </div>
+
+            {interview.relevant_links && (
+              <div className="mt-8">
+                <h3 className="font-bold text-xl mb-4">Enlaces Relevantes</h3>
+                <ul className="list-disc pl-5">
+                  {interview.relevant_links.map((link, index) => (
+                    <li key={index}>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:underline"
+                      >
+                        {link.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* <Image
               src="/sponsor.jpg"
