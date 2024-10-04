@@ -4,8 +4,11 @@ export interface Interview {
   id: string;
   name: string;
   image: string;
+  images: string[];
   intro: string;
   interview_text: string;
+  soundcloud_player?: string;
+  relevant_links?: { name: string; url: string }[];
   created_at: string;
 }
 
