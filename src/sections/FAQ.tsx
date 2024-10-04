@@ -11,8 +11,8 @@ export default function FAQ() {
           Nos comprometemos a establecer el medio digital líder en la escena electrónica de LATAM y a organizar eventos con lineups seleccionados a través de concursos, donde los participantes serán DJs emergentes.`}
       />
       <Accordion
-        title="¿Cómo funcionará el medio digital?"
-        answer="Desarrollaremos contenido variado y de alta calidad a través de todas las plataformas y redes sociales, con una identidad claramente definida. Nuestro objetivo es construir una comunidad sólida de Ravers y DJs, proporcionando a los artistas emergentes la visibilidad que merecen y facilitando su conexión con una audiencia más amplia."
+        title="¿Cómo funciona el medio digital?"
+        answer="Desarrollamos contenido variado y de alta calidad a través de todas las plataformas y redes sociales. Nuestro objetivo es construir una comunidad sólida de Ravers y DJs, proporcionando a los artistas emergentes la visibilidad que merecen y facilitando su conexión con una audiencia más amplia."
       />
       <Accordion
         title="¿Cómo funciona el concurso?"
