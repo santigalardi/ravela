@@ -43,6 +43,20 @@ const config: Config = {
       shadowOffsetX: '2px',
       shadowOffsetY: '1px',
     }),
+    require('tailwind-scrollbar'),
+    // Custom scrollbar styles
+    function ({ addComponents }: any) {
+      addComponents({
+        '.scrollbar-hidden::-webkit-scrollbar': {
+          display: 'none',
+        },
+        '.scrollbar-hidden': {
+          '-ms-overflow-style': 'none', // for Internet Explorer and Edge
+          'scrollbar-width': 'none', // for Firefox
+        },
+      });
+    },
   ],
 };
+
 export default config;
