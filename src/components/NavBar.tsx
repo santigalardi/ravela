@@ -45,7 +45,7 @@ const NavBar = () => {
     <header
       className={`absolute min-w-[320px] top-0 left-0 w-full z-20 transition-all duration-300 ${isInterviewPage && 'bg-primary-black'}`}
     >
-      <div className="relative w-full max-w-7xl mx-auto flex items-center h-24 p-2 md:p-8">
+      <div className="relative w-full max-w-7xl mx-auto flex items-center h-24 md:p-8">
         {showLeftArrow && (
           <div
             className={`absolute left-0 top-0 h-full w-8 bg-gradient-to-r 
@@ -65,7 +65,7 @@ const NavBar = () => {
         )}
         <div
           ref={navRef}
-          className={`w-full flex items-center ${pathname === '/' ? 'justify-center md:justify-between' : 'justify-between'} h-24 overflow-x-auto scrollbar-hidden`}
+          className={`w-full flex items-center ${pathname === '/' ? 'justify-center md:justify-between' : 'justify-between'} h-24 p-2 overflow-x-auto scrollbar-hidden`}
         >
           <div>
             <div className={`md:pl-10 ${pathname === '/' && 'hidden'}`}>
