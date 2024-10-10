@@ -6,7 +6,7 @@ const IMAGE_PLACEHOLDER_URL = '/sponsor.jpg';
 export const formatInterviewText = (
   interviewText: { questions: { question: string; answer: string }[] },
   images: string[],
-  soundcloudPlayer?: string // Puede ser opcional
+  soundcloudPlayer?: string
 ) => {
   let totalCharCount = 0;
   let imageIndex = 0;
