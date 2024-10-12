@@ -24,7 +24,7 @@ const LastSetSection = () => {
     <section className="flex h-[80vh] md:min-h-screen justify-center items-center">
       {isClient && (
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=Z4fWrm3Fvvk"
+          url="https://www.youtube.com/watch?v=A90gZ-dCYS4"
           playing={true}
           controls
           muted={true}
