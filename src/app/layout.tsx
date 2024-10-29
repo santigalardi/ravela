@@ -51,6 +51,7 @@ export default function RootLayout({
             name="description"
             content="Ravela - Los DJs del Mañana se Revelan Hoy. Descubre nuevos talentos y disfruta de eventos de música electrónica en vivo."
           />
+          <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://ravela.com.ar" />
         </head>
         <body className={`text-primary-white ${poppins.className} mx-auto`}>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ravela.com.ar
+
+# Sitemaps
+Sitemap: https://ravela.com.ar/sitemap.xml
